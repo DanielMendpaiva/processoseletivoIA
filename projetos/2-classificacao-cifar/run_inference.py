@@ -21,7 +21,7 @@ import tensorflow as tf
 #   3. Imprimir no terminal, para cada amostra: classe predita vs. classe real
 # ---------------------------------------------------------------------------
 
-N_SAMPLES = 5
+N_SAMPLES = 30
 
 CLASS_NAMES = [
     "airplane", "automobile", "bird", "cat", "deer",
