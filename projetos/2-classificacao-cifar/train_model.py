@@ -131,6 +131,9 @@ try:
                     d.pop("output_axes", None)
                     d.pop("synchronized", None)
                     d.pop("registered_name", None)
+                    d.pop("renorm", None)
+                    d.pop("renorm_clipping", None)
+                    d.pop("renorm_momentum", None)
                     for v in d.values():
                         clean_dict(v)
                 elif isinstance(d, list):
