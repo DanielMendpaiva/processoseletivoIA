@@ -126,8 +126,11 @@ try:
             
             def clean_dict(d):
                 if isinstance(d, dict):
+                    # Remove chaves do Keras 3 incompatíveis com tf.keras do GitHub Actions
                     d.pop("input_axes", None)
                     d.pop("output_axes", None)
+                    d.pop("synchronized", None)
+                    d.pop("registered_name", None)
                     for v in d.values():
                         clean_dict(v)
                 elif isinstance(d, list):
